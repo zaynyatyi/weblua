@@ -76789,7 +76789,7 @@ this['Lua'] = {
         this.require_initialization();
         source_name = source_name || this.default_source_name;
         source      = source      || command;
-
+		
         if (this.parse(command, source_name)) {
             // Parse success, now try calling func at top of stack
             var callFailed = _lua_pcallk(this.state, 0, -1, 0);
